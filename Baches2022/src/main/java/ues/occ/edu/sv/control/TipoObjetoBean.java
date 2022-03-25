@@ -19,8 +19,8 @@ import ues.occ.edu.sv.baches2022.TipoObjeto;
 public class TipoObjetoBean extends AbstractDataAccess<TipoObjeto>implements Serializable{
     @PersistenceContext(name="BachesPU")
     EntityManager em;
-    public TipoObjetoBean(Class clase) {
-        super(clase);
+    public TipoObjetoBean() {
+        super(TipoObjeto.class);
     }
 
     @Override

@@ -19,8 +19,8 @@ import ues.occ.edu.sv.baches2022.Ruta;
 public class RutaBean extends AbstractDataAccess<Ruta>implements Serializable{
 @PersistenceContext(name="BachePu")
 EntityManager em;
-    public RutaBean(Class clase) {
-        super(clase);
+    public RutaBean() {
+        super(Ruta.class);
     }
 
     @Override

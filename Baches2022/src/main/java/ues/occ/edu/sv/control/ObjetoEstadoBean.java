@@ -10,6 +10,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import ues.occ.edu.sv.baches2022.ObjetoEstado;
 
 /**
  *
@@ -20,7 +21,7 @@ public class ObjetoEstadoBean extends AbstractDataAccess<Object>implements Seria
     @PersistenceContext (name="BachesPU")
     EntityManager em;
     public ObjetoEstadoBean() {
-        super(ObjetoEstadoBean.class);
+        super(ObjetoEstado.class);
     }
 
     @Override
