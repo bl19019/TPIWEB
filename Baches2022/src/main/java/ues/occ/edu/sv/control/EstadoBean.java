@@ -19,8 +19,8 @@ import ues.occ.edu.sv.baches2022.Estado;
 public  class EstadoBean extends AbstractDataAccess<Estado>implements Serializable{
     @PersistenceContext (name="BachesPU")
     EntityManager em;
-    public EstadoBean(Class clase) {
-        super(clase);
+    public EstadoBean() {
+        super(Estado.class);
     }
 
     @Override

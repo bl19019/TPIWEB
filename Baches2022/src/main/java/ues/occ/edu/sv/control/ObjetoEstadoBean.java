@@ -15,12 +15,12 @@ import javax.persistence.TypedQuery;
  *
  * @author bryan
  */
-public class ObjetoEstado extends AbstractDataAccess<Object>implements Serializable{
+public class ObjetoEstadoBean extends AbstractDataAccess<Object>implements Serializable{
 
     @PersistenceContext (name="BachesPU")
     EntityManager em;
-    public ObjetoEstado(Class clase) {
-        super(clase);
+    public ObjetoEstadoBean() {
+        super(ObjetoEstadoBean.class);
     }
 
     @Override
